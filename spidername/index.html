@@ -3,16 +3,18 @@
 <body>
 <h1 style="text-align:center">Spidername</h1>
 <p style="text-align:center">ENTER TEXT</p>
-<form id="inputform">
+<form id="inputform" style="align:center">
     <input name="text" id="txtinput">
     <input type="submit" onclick="txtsubmit()">
 </form>
 </body>
     <script>
-        function txtsubmit() {
+        function txtsubmit() 
+        {
+            var xhttp = new XMLHttpRequest();
             var input = document.getElementById("txtinput").value;
             var link = "https://spidername.herokuapp.com/man/${input}";
-            console.log(link);
+            xhttp.open(link);
         }
     </script>
 </html>
