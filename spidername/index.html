@@ -12,9 +12,10 @@
         function txtsubmit() 
         {
             var input = document.getElementById("txtinput").value;
-            console.log(input);
-            var link = sprintf('https://spidername.herokuapp.com/man/%s', input);
-            console.log(link);
+
+            var link = sprintf('https://spidername.herokuapp.com/man/%s',input);
+
+
             window.open(link, '_blank');
         }
     </script>
