@@ -1,24 +1,36 @@
 <!DOCTYPE html>
-<html>
-<style>
-  script {
-  display: none;
-    } 
-</style>
-<body>
-<h1 style="text-align:center">Spidername</h1>
-<p style="text-align:center">ENTER TEXT</p>
-<form id="inputform" style="align:center">
-    <input name="text" id="txtinput">
-    <input type="submit" onclick="txtsubmit()">
-</form>
-<script>
-function txtsubmit() 
-{
-     var input = document.getElementById("txtinput").value;
-     var link = 'https://spidername.herokuapp.com/man/'+input;
-     window.open(link);
-}
-</script>
-</body>
+<html lang="en">
+    <head>
+        <title>Spidername</title>
+        <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <h1>Spidername</h1>
+
+        <div>
+            <form id="inputform" style="text-align:center">
+                <input type="text" value="ENTER TEXT" id="txtinput">
+                <input type="submit" value="Go" onclick="txtsubmit()">
+            </form>
+
+            <div class="bodelement">
+                <h2>
+                    <a href="https://github.com/csharpisez" target="blank">Github</a><br>
+                    <a href="https://www.github.com/csharpisez/spidername-api" target="blank">API</a>
+                    (powered by Heroku)
+                </h2>
+            </div>
+        </div>
+
+        <script>
+            function txtsubmit() 
+            {
+                var input = document.getElementById("txtinput").value;
+                var link = 'https://spidername.herokuapp.com/man/'+input;
+                window.open(link);
+            }
+        </script>
+    </body>
 </html>
