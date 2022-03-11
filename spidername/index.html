@@ -11,10 +11,9 @@
     <script>
         function txtsubmit() 
         {
-            var xhttp = new XMLHttpRequest();
             var input = document.getElementById("txtinput").value;
             var link = "https://spidername.herokuapp.com/man/${input}";
-            xhttp.open(link);
+            window.open(link, '_blank');
         }
     </script>
 </html>
