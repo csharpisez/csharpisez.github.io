@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Spidername</h1>
-<p>ENTER TEXT</p>
-<form method="POST">
-    <input name="text">
-    <input type="submit">
+<h1 style="text-align:center">Spidername</h1>
+<p style="text-align:center">ENTER TEXT</p>
+<form id="inputform">
+    <input name="text" id="txtinput">
+    <input type="submit" onclick="txtsubmit()">
 </form>
 </body>
+    <script>
+        function txtsubmit() {
+            var input = document.getElementById("txtinput").value;
+            console.log(input);
+            fetch('https://spidername.herokuapp.com/man/'+$input)
+        }
+    </script>
 </html>
