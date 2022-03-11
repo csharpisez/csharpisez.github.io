@@ -12,7 +12,7 @@
         function txtsubmit() 
         {
             var input = document.getElementById("txtinput").value;
-            var link = "https://spidername.herokuapp.com/man/${input}";
+            var link = sprintf('https://spidername.herokuapp.com/man/%s', input);
             console.log(link);
             window.open(link, '_blank');
         }
