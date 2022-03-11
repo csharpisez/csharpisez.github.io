@@ -7,16 +7,11 @@
     <input name="text" id="txtinput">
     <input type="submit" onclick="txtsubmit()">
 </form>
+function txtsubmit() 
+{
+     var input = document.getElementById("txtinput").value;
+     var link = 'https://spidername.herokuapp.com/man/'+input;
+     window.open(link);
+}
 </body>
-    <script>
-        function txtsubmit() 
-        {
-            var input = document.getElementById("txtinput").value;
-
-            var link = 'https://spidername.herokuapp.com/man/'+input;
-
-
-            window.open(link, '_blank');
-        }
-    </script>
 </html>
